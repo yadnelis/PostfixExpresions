@@ -128,15 +128,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dummy.cpp" />
+    <ClCompile Include="FileManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PostfixCalculatorExceptions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DataStructures.h" />
+    <ClInclude Include="FileManager.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="LinkedListIterator.h" />
-    <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="LinkedStack.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="OrderedLinkedList.h" />
+    <ClInclude Include="PostfixCalculatorExceptions.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="UnorderedLinkedList.h" />
   </ItemGroup>
