@@ -130,6 +130,19 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="LinkedListIterator.h" />
+    <ClInclude Include="LinkedQueue.h" />
+    <ClInclude Include="LinkedStack.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="OrderedLinkedList.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="UnorderedLinkedList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PostfixExpresions.rc" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
