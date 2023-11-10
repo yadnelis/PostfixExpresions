@@ -24,7 +24,7 @@
     <ProjectGuid>{a9da8bcf-e8b9-46b7-a293-f2361e5ad848}</ProjectGuid>
     <RootNamespace>Postfixexpresions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>PostfixExpresions</ProjectName>
+    <ProjectName>PostfixExpressions</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
