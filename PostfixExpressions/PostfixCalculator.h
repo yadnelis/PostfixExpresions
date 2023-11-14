@@ -5,5 +5,4 @@
 namespace PostfixCalculator
 {
    void evaluateExpression(std::istream &in, std::ostream &out, DataStructures::LinkedStack<double> &stack, char &current);
-   void evaluateOpr(std::ostream &out, DataStructures::LinkedStack<double> &stack, char &current);
 }
