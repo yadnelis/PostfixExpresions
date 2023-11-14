@@ -131,6 +131,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PostfixCalculator.cpp" />
     <ClCompile Include="PostfixCalculatorExceptions.cpp" />
+    <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataStructures.h" />
@@ -141,6 +142,7 @@
     <ClInclude Include="OrderedLinkedList.h" />
     <ClInclude Include="PostfixCalculator.h" />
     <ClInclude Include="PostfixCalculatorExceptions.h" />
+    <ClInclude Include="UI.h" />
     <ClInclude Include="UnorderedLinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

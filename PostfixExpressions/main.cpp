@@ -1,10 +1,13 @@
 #pragma once*
 #include <iostream>
 #include <sstream>
+#include <exception>
 #include <fstream>
 #include <iomanip>
+#include <assert.h>
 #include "DataStructures.h"
 #include "PostfixCalculator.h"
+#include "UI.h"
 
 
 using namespace std;
@@ -16,13 +19,22 @@ int main()
 {
    char current;
    LinkedStack<double> stack;
-   std::istringstream in("#3#4+#5*=");
+   std::istringstream in;
    std::ostringstream out;
+   std::string s;
    try
    {
-      std::cout << in.str();
-      evaluateExpression(in, out, stack, current);
-      std::cout << out.str();
+      do
+      {
+         s = UI::getPostfixExpression();
+         if(s != "quit")
+         {
+            in.str(s);
+            evaluateExpression(in, out, stack, current);
+            UI::showResult(out.str());
+         }
+      }
+      while(s != "quit");
       return 0;
    }
    catch (exception e)
