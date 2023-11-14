@@ -13,4 +13,3 @@ Postfix notation, also called Reversed Polish notation, is a way of writing arit
 | (a-b) \* (c+d)       | ab+cd+\*     |
 | (a+b) \* (c-d/e) + f | ab+cde/-\*f+ |
 
-`Note: When I created the program I wrote a space in the name and now there's not much I can do about it`
