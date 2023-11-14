@@ -1,5 +1,5 @@
 # Postfix Expressions
-This program evaluates *arithmetic operations* written in postfix notation.
+This CLI program evaluates *arithmetic operations* written in postfix notation.
 
 ## What is postfix notation?
 Postfix notation, also called Reversed Polish notation, is a way of writing arithmetic without using parenthesis. Instead of writing the operator in between the operand, it is written after the operand.  Here are some examples :
