@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{a9da8bcf-e8b9-46b7-a293-f2361e5ad848}</ProjectGuid>
-    <RootNamespace>Postfixexpresions</RootNamespace>
+    <RootNamespace>PostfixExpressions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>PostfixExpressions</ProjectName>
   </PropertyGroup>
@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PostfixCalculator.cpp" />
     <ClCompile Include="PostfixCalculatorExceptions.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +139,7 @@
     <ClInclude Include="LinkedStack.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="OrderedLinkedList.h" />
+    <ClInclude Include="PostfixCalculator.h" />
     <ClInclude Include="PostfixCalculatorExceptions.h" />
     <ClInclude Include="UnorderedLinkedList.h" />
   </ItemGroup>

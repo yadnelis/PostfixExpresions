@@ -4,16 +4,13 @@
 #include <fstream>
 #include <iomanip>
 #include "DataStructures.h"
-#include "PostfixCalculatorExceptions.h"
+#include "PostfixCalculator.h"
 
 
 using namespace std;
 using namespace DataStructures;
+using namespace PostfixCalculator;
 
-void evaluateExpression(istream &in, ostream &out, LinkedStack<double> &stack, char &current);
-void evaluateOpr(ostream &out, LinkedStack<double> &stack,char &current);
-void discardExp(istream &in, ostream &out, char &current);
-void printResult(ostream &out, LinkedStack<double> &stack);
 
 int main()
 {
@@ -36,56 +33,4 @@ int main()
    }
 }
 
-void evaluateExpression(istream &in, ostream &out, LinkedStack<double> &stack, char &current)
-{
-   double num;
-   in >> current;
-   while(current != '=')
-   {
-      if(current == '#')
-      {
-         in >> num;
-         stack.push(num);
-      }
-      else
-         evaluateOpr(out, stack, current);
-      in >> current;
-   }
-   out << stack.top();
-}
 
-void evaluateOpr(ostream &out, LinkedStack<double> &stack, char &current)
-{
-   double op1, op2;
-
-   if(stack.isEmptyStack())
-      throw InsuficientOperands();
-
-   op2 = stack.top();
-   stack.pop();
-
-   if(stack.isEmptyStack())
-      throw InsuficientOperands();
-
-   op1 = stack.top();
-   stack.pop();
-
-   switch(current)
-   {
-      case '+':
-         stack.push(op1 + op2);
-         break;
-      case '-':
-         stack.push(op1 - op2);
-         break;
-      case '/':
-         stack.push(op1 / op2);
-         break;
-      case '*':
-         stack.push(op1 * op2);
-         break;
-      default:
-         throw InvalidOperatorException();
-         break;
-   }
-}

@@ -21,6 +21,9 @@
     <ClCompile Include="PostfixCalculatorExceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PostfixCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkedList.h">
@@ -45,6 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PostfixCalculatorExceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PostfixCalculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
